@@ -1,0 +1,167 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #fafafa;
+}
+
+* {
+  transition: all .3s ease;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.galleryRail {
+  position: absolute;
+  height: 60vh;
+  width: 80vw;
+  overflow-x: scroll;
+}
+
+section.a {
+  display: flex;
+  width: 270vh;
+}
+
+figure {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+figure.big {
+  width: 60vh;
+  height: 60vh;
+}
+
+figure.small {
+  width: 30vh;
+  height: 30vh;
+}
+
+.galleryNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.galleryNav div {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 30px;
+}
+
+.galleryNav .disabled {
+  opacity: 0;
+  cursor: default;
+}
+
+/*Arrow*/
+
+.galleryNav div::before,
+.galleryNav div::after {
+  content: '';
+  position: absolute;
+  background: black;
+}
+
+.galleryNav div::before {
+  width: 5px;
+  height: 20px;
+}
+
+.galleryNav div::after {
+  width: 20px;
+  height: 5px;
+}
+
+#prev {
+  transform: rotate(-45deg);
+}
+
+#next {
+  transform: rotate(135deg);
+}
+
+/*Arrow End*/
+
+#photo1 {
+background-image: url(../images/photo1.jpg);
+}
+
+#photo2 {
+background-image: url(../images/photo2.jpg);
+}
+
+#photo3 {
+  background-image: url(../images/photo3.jpg);
+}
+
+#photo1_1 {
+background-image: url(../images/photo1_1.jpg);
+}
+
+#photo1_2 {
+background-image: url(../images/photo1_2.jpg);
+}
+
+#photo2_1 {
+background-image: url(../images/photo2_1.jpg);
+}
+
+#photo2_2 {
+background-image: url(../images/photo2_2.jpg);
+}
+
+#photo3_1 {
+  background-image: url(../images/photo3_1.jpg);
+}
+
+#photo3_2 {
+  background-image: url(../images/photo3_2.jpg);
+}
+
+/*  Menubar  */
+
+nav.menubar,
+nav.footer {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  z-index: 2;
+}
+
+nav.menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+nav.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+nav.menubar a,
+nav.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+nav.menubar a:hover {
+  color: blue;
+}
