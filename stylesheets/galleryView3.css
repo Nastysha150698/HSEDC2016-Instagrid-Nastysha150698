@@ -16,10 +16,11 @@ body {
 }
 
 .galleryRail {
-  position: absolute;
+  position: relative;
   height: 60vh;
   width: 80vw;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 section.a {
