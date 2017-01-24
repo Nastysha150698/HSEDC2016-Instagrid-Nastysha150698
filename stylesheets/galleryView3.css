@@ -49,7 +49,8 @@ figure.small {
   align-items: center;
   position: fixed;
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
+
 }
 
 .galleryNav div {
@@ -57,7 +58,7 @@ figure.small {
   cursor: pointer;
   width: 20px;
   height: 20px;
-  margin: 30px;
+  margin: -23px;
 }
 
 .galleryNav .disabled {
